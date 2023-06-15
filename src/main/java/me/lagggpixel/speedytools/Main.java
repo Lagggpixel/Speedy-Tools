@@ -1,9 +1,8 @@
 package me.lagggpixel.speedytools;
 
 import lombok.Getter;
+import me.lagggpixel.speedytools.commands.SpeedyToolsCommand;
 import me.lagggpixel.speedytools.listeners.CraftItemListener;
-import org.bstats.bukkit.Metrics;
-import org.bstats.config.MetricsConfig;
 import org.bukkit.Material;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -102,10 +101,15 @@ public final class Main extends JavaPlugin {
 
         loadConfigs();
         registerListeners();
+        registerCommands();
     }
 
     @Override
     public void onDisable() {
+    }
+
+    private void registerCommands() {
+        new SpeedyToolsCommand();
     }
 
     private void registerListeners() {

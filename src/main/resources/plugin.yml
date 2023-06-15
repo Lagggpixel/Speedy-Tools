@@ -4,6 +4,9 @@ main: me.lagggpixel.speedytools.Main
 api-version: 1.20
 commands:
   speedytools:
+    aliases:
+      - speedytool
+    permission: speedytools.command
     description: Speedy Tools
 permissions:
   speedytools.use.tools:
@@ -12,3 +15,5 @@ permissions:
     default: true
   speedytools.use.swords:
     default: true
+  speedytools.command:
+    default: false
