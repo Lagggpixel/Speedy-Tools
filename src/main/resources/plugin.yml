@@ -1,0 +1,14 @@
+name: SpeedyTools
+version: '${project.version}'
+main: me.lagggpixel.speedytools.Main
+api-version: 1.20
+commands:
+  speedytools:
+    description: Speedy Tools
+permissions:
+  speedytools.use.tools:
+    default: true
+  speedytools.use.armor:
+    default: true
+  speedytools.use.swords:
+    default: true

@@ -1,0 +1,2 @@
+# Whether if only players with appropriate permission can craft the enhanced tools
+use-permissions: False
